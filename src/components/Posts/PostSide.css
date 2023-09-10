@@ -1,0 +1,354 @@
+.PostSide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.PostShare-experience {
+    display: flex;
+    gap: 1rem;
+    background-color: white;
+    border: 1px solid grey;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: fit-content;
+    min-width: 95%;
+}
+
+.PostShare-experience>img {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.PostShare-experience>div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 1rem;
+}
+
+.PostShare-experience>div>input {
+    background-color: rgba(194, 194, 194, 0.808);
+    border-radius: 30px;
+    border: 1px solid #b7b7b7;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.PostShare-experience>div>input:hover {
+    background-color: #dcdcdc;
+    transition: 0.5s ease-in;
+
+}
+
+
+.postOptions {
+    display: grid;
+    grid-template-columns: repeat(3, 140px);
+    align-items: center;
+    justify-content: center;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option>p {
+    margin-left: 5px;
+}
+
+.option:hover {
+    cursor: pointer;
+    text-shadow: 0px 2px 2px rgba(128, 128, 128, 0.492);
+}
+
+.Post-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #0a66c2;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 100ms ease;
+  }
+
+.Post-button:hover {
+    cursor: pointer;
+    color: black;
+    background: transparent;
+    border: 1px solid #0a66c2;
+}
+
+.previewImage {
+    position: relative;
+}
+
+.previewImage>i {
+    position: absolute;
+    z-index: 99;
+    padding: 5px;
+    right: 1rem;
+    top: 0.5rem;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.previewImage>i:hover {
+    background-color: rgb(245, 245, 245);
+    border-radius: 50%;
+}
+
+.previewImage>img {
+    width: 100%;
+    max-height: 20rem;
+    object-fit: scale-down;
+    border-radius: 0.5rem;
+}
+
+.previewImage>video {
+    width: 100%;
+    max-height: 20rem;
+    object-fit: scale-down;
+    border-radius: 0.5rem;
+}
+
+/* =========================================================== Posts.jsx = css ================================================ */
+
+.Posts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* ========================================================== Post.jsx = css ============================================== */
+
+.post-container {
+    width: 45%;
+    height: auto;
+    background-color: rgba(222, 222, 222, 0.622);
+    padding: 10px;
+    padding-top: 8px;
+    margin: 0px auto;
+    border-radius: 1rem;
+    margin-bottom: 20px;
+}
+
+.post-top {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.post-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.post-heading {
+    width: fit-content;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.post-heading span {
+    color: black;
+}
+
+
+.post-description {
+  font-size: 17px;
+  font-weight: 350;
+  max-height: auto;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.post-description p{
+    margin: 0px;
+}
+
+.see-more-btn {
+    border: none;
+    background-color: transparent;
+    color: grey;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.line {
+    width: 95%;
+    height: 1.2px;
+    border-radius: 2px;
+    background: rgb(110, 109, 109);
+    border-radius: 5px;
+    margin: 3px;
+}
+
+
+.post-middle {
+    width: 100%;
+    margin: 0;
+}
+
+.post-middle-1 {
+    margin-top: 20px;
+}
+
+
+.post-middle-1 img,
+.post-middle-1 video {
+    max-width: 100%;
+    max-height: 400px; 
+    width: 100%;
+    padding: 10px auto;
+}
+
+.post-bottom {
+    margin-top: 0px;
+    margin-top: 20px;
+}
+
+.post-options{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 20px
+}
+
+.post-likes,
+.post-comments{
+    font-size: 12px;
+    color: grey;
+}
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .comment-list li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .comment-list li button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .comment-textarea {
+    width: 95%;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .submit-comment-btn,
+  .cancel-comment-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .cancel-comment-btn {
+    background-color: #e74c3c;
+  }
+/* CSS for the comment list */
+.post-comments-section {
+    border: 1px solid black;
+    border-radius: 10px;
+    width:80%;
+    margin: auto;
+  }
+  
+  .post-comments-section h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .comments-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .comment-container {
+    display: flex;
+    align-items: baseline;
+    margin: 10px;
+    overflow-x: hidden;
+  }
+  
+  .avatar-container {
+    align-items: center;
+    margin-right: 1rem;
+  }
+  
+  .avatar {
+    margin-right: 0.5rem;
+  }
+  
+  .comment-user-name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .comment-content {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Add this style to make the Delete button appear on the same line */
+  .comment-container button {
+    margin-left: auto;
+    background-color: transparent;
+    border: transparent;
+    color: grey;
+    font-size: 14px
+  }
+  
+  .post-comments-section ul,
+  .post-comments-section li{
+    margin: 0px;
+  }

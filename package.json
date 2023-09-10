@@ -1,0 +1,78 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chatscope/chat-ui-kit-react": "^1.10.1",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "cors": "^2.8.5",
+    "crypto-browserify": "^3.12.0",
+    "express": "^4.18.2",
+    "firebase": "^9.23.0",
+    "firebase-admin": "^11.10.1",
+    "fs": "^0.0.1-security",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.4",
+    "net": "^1.0.2",
+    "openai": "^3.3.0",
+    "otp-input-react": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "prismjs": "^1.29.0",
+    "querystring-es3": "^0.2.1",
+    "razorpay": "^2.9.0",
+    "react": "^18.2.0",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.10.1",
+    "react-phone-input-2": "^2.15.1",
+    "react-redux": "^8.0.7",
+    "react-router-dom": "^6.12.1",
+    "react-scripts": "^5.0.1",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "postcss-nesting": "^12.0.0",
+    "prettier": "^3.0.0",
+    "tailwindcss": "^3.3.2"
+  }
+}

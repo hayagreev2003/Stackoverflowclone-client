@@ -1,0 +1,202 @@
+/* Payment.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.pricing-page {
+  padding-top: 100px;
+  width: 100%;
+}
+
+.pricing-page h2 {
+  text-align: center;
+  font-size: 3vw;
+}
+
+.subs-container {
+  margin-top: 100px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: fit-content;
+  min-height: 75vh;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subs-container h2 {
+  color: #333;
+  font-size: 32px;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+.pricing-table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  width: min(1600px, 100%);
+  margin: auto;
+}
+
+.pricing-card {
+  position: relative;
+  width: 250px;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Bronze Background (Pricing Card 1) */
+.pricing-card-1 {
+  background: linear-gradient(45deg, #84511e, transparent);
+  color: #472b16;
+}
+
+/* Silver Background (Pricing Card 2) */
+.pricing-card-2 {
+  background: linear-gradient(45deg, #c0c0c0, transparent);
+  color: #7c7a7a;
+}
+
+/* Gold Background (Pricing Card 3) */
+.pricing-card-3 {
+  background: linear-gradient(45deg, #ffd700, transparent);
+  color: #704f00;
+}
+
+.current-plan-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffcd4d;
+  color: #000;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.pricing-card-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 40px;
+  color: #000;
+  margin: 10px 0;
+  transition: 0.2s linear;
+  font-weight: bold;
+}
+
+.price sup,
+.price span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+ul {
+  padding: 0;
+  margin: 20px 0;
+  list-style-type: none;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+.cp {
+  margin-top: 40px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  background-color: #198754;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.order-btn {
+  display: inline-block;
+  border: none;
+  color: #fff;
+  background-color: #000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+
+.order-btn:hover {
+  background-color: #e0e0e0;
+  color: #000;
+  cursor: pointer;
+}
+
+.order-btn:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+  transition: width 0.3s;
+}
+
+.order-btn:hover:after {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+  .pricing-page h2 {
+    text-align: center;
+    font-size: 5vw;
+  }
+
+  .subs-container {
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  .pricing-card {
+    width: 250px;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 32px;
+  }
+
+  .order-btn {
+    padding: 8px 16px;
+  }
+}

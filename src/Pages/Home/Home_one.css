@@ -1,0 +1,227 @@
+.stack-home-page {
+    padding-top: 40px;
+    background: url('./stack-overflow.jpeg');
+    min-height: 93vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stackhome-content{
+    background-color: rgba(43, 43, 43, 0.737);
+    width: 100%;
+    min-height: 90vh;
+}
+
+.stackhome-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stackhome-left,
+.stackhome-right {
+    width: 90%;
+    padding-top: 8%;
+    margin: auto;
+}
+
+.stackmessage-content,
+.stackmessage-content-1{
+    width: 80%;
+    margin: auto;
+    font-size: 100%;
+    margin-bottom: 8px;
+}
+
+
+/* ================================================================================================= */
+
+.stackhome-message {
+    margin: auto;
+    position: relative;
+    width: 90%;
+    min-height: 40vh;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, .2);
+    padding: 15px;
+    background-color: #FEE3CD;
+}
+
+.stackmessage-top{
+    text-align: center;
+}
+
+.stackmessage-top img{
+    width: 16%;
+}
+
+.stacklogin-link{
+    text-align: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    background-color: #ffa500;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.stacklink-question{
+    text-align: center;
+}
+
+.stacklogin-link:hover{
+    background-color: #ffa600b7;
+}
+
+.stacklogin-link p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.stacklink-question{
+    margin-top: 4px;
+    font-size: 13px;
+}
+
+.questions-link{
+    color:black;
+}
+
+.questions-link:hover{
+    color:orangered;
+}
+
+.stackhome-message-arrow {
+    position: absolute;
+    right: 15px;
+    bottom: -24px;
+    border-left: 21px solid transparent;
+    border-top: 20px solid rgba(0, 0, 0, .2);
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 5px;
+        bottom: 2px;
+        border: transparent;
+        border-left: 23px solid transparent;
+        border-top: 23px solid #FEE3CD;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 6px;
+        bottom: 4px;
+        border: transparent;
+        border-left: 21px solid transparent;
+        border-top: 21px solid #FEE3CD;
+    }
+}
+
+
+/* ================================================================================ */
+
+.stackhome-message-1 {
+    margin: auto;
+    position: relative;
+    width: 70%;
+    min-height: 40vh;
+    background-color: #cdf9fe;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, .2);
+    padding: 15px;
+}
+
+.stackmessage-top-1{
+    text-align: center;
+}
+
+.stackmessage-top-1 img{
+    width: 14%;
+}
+
+.stackchatbot-link{
+    text-align: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    background-color: #0a95ff;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.stackchatbot-link:hover{
+    background-color: #5f67fa;
+}
+
+.chatbot-link p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.stackhome-message-arrow-1 {
+    position: absolute;
+    right: 15px;
+    bottom: -24px;
+    border-left: 21px solid transparent;
+    border-top: 20px solid rgba(0, 0, 0, .2);
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 5px;
+        bottom: 2px;
+        border: transparent;
+        border-left: 23px solid transparent;
+        border-top: 23px solid #cdf9fe;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 6px;
+        bottom: 4px;
+        border: transparent;
+        border-left: 21px solid transparent;
+        border-top: 21px solid #cdf9fe;
+    }
+}
+
+.pricing{
+    margin: 5%;
+}
+.pricing a{
+    margin-top: 50px;
+    text-align: center;
+    color:whitesmoke;
+}
+
+.pricing a:hover{
+    color:orangered;
+}
+
+/* ======================================================================================================== */
+
+.home-subscription{
+    width: 100%;
+    min-height: 90vh;
+}
+
+@media only screen and (max-width: 900px) {
+
+}
+  
+  @media only screen and (max-width: 700px) {
+    .stack-home-page {
+        background: url('./stack-overflow-mobile.jpeg');
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+  
+  }
